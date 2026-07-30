@@ -216,7 +216,7 @@ export const App: React.FC = () => {
               {/* Overlay Halus */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30 pointer-events-none rounded-full" />
 
-              {/* Logo SAN Academy Putih - Disesuaikan menjadi w-[85%] h-[85%] agar ada padding seimbang */}
+              {/* Logo SAN Academy Putih */}
               <div className="relative z-10 w-[85%] h-[85%] rounded-full aspect-square bg-white shadow-[0_0_40px_rgba(255,255,255,0.95),0_0_60px_rgba(34,211,238,0.85)] flex items-center justify-center border-2 border-cyan-300/80 transition-transform duration-500 group-hover:scale-105 overflow-hidden">
                 <img 
                   src="https://raw.githubusercontent.com/FebrianyRenata02/san-academy-bootcamp/refs/heads/main/src/assets/Untitled%20(33).png" 
@@ -244,7 +244,11 @@ export const App: React.FC = () => {
           <button className="bg-slate-100 hover:bg-cyan-400 text-slate-950 px-6 py-2 rounded-full font-bold text-xs transition-colors shadow-[0_0_20px_rgba(255,255,255,0.2)]">
             EXPLORE DEEP SPACE
           </button>
-          <span className="text-slate-500 animate-bounce mt-2 text-lg">↓</span>
+          
+          {/* Ikon Mouse Scroll Custom (Diperbesar: w-6 h-10) */}
+          <div className="w-6 h-10 rounded-full border-2 border-slate-400/60 flex items-start justify-center p-1 mt-2 animate-bounce shadow-[0_0_12px_rgba(34,211,238,0.4)]">
+            <div className="w-1.5 h-3.5 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full animate-pulse" />
+          </div>
         </div>
       </section>
 
