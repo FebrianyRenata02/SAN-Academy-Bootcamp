@@ -245,7 +245,7 @@ export const App: React.FC = () => {
             EXPLORE DEEP SPACE
           </button>
           
-          {/* Ikon Mouse Scroll Custom (Diperbesar: w-6 h-10) */}
+          {/* Ikon Mouse Scroll Custom */}
           <div className="w-6 h-10 rounded-full border-2 border-slate-400/60 flex items-start justify-center p-1 mt-2 animate-bounce shadow-[0_0_12px_rgba(34,211,238,0.4)]">
             <div className="w-1.5 h-3.5 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full animate-pulse" />
           </div>
@@ -284,14 +284,16 @@ export const App: React.FC = () => {
         <div className="mt-12 bg-purple-950/30 border border-purple-800/30 rounded-3xl p-8 flex flex-col md:flex-row items-center gap-8 backdrop-blur-md">
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-full bg-purple-600/30 blur-xl animate-pulse" />
-            <img 
-              src="https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=400&auto=format&fit=crop" 
-              alt="Mars Detail" 
-              className="relative w-48 h-48 rounded-full object-cover border border-purple-500/40 shadow-[0_0_30px_rgba(168,85,247,0.3)]"
-            />
+            <div className="relative w-48 h-48 rounded-full bg-white border border-purple-500/40 shadow-[0_0_30px_rgba(168,85,247,0.3)] flex items-center justify-center overflow-hidden p-2">
+              <img 
+                src="https://raw.githubusercontent.com/FebrianyRenata02/skill-activation-network/refs/heads/main/src/assets/Agency%20Logo.png" 
+                alt="SAN Academy Logo" 
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
           </div>
           <div>
-            <h3 className="text-2xl font-serif text-slate-100 mb-2">RED PLANET RESEARCH</h3>
+            <h3 className="text-2xl font-serif text-slate-100 mb-2">SAN Academy Bootamp</h3>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xl">
               Mars is the fourth planet from the Sun. Earth's axis of rotation is tilted with respect to its orbital plane, producing seasons on Earth. The gravitational interaction between Earth and the Moon causes tides, stabilizes Earth's orientation on its axis, and gradually slows its rotation.
             </p>
