@@ -182,7 +182,7 @@ export const App: React.FC = () => {
           </div>
         </div>
 
-        {/* Central Banner - Ukuran diperkecil */}
+        {/* Central Banner */}
         <div className="relative w-full max-w-5xl my-6 flex items-center justify-between z-10 px-2">
           <button 
             onClick={handlePrevPlanet} 
@@ -191,7 +191,7 @@ export const App: React.FC = () => {
             <span className="group-hover:-translate-x-1 transition-transform">‹</span> {prevPlanetName}
           </button>
 
-          {/* Central Galaxy Frame Container - Diperkecil sedikit */}
+          {/* Central Galaxy Frame Container */}
           <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-[380px] md:h-[380px] lg:w-[420px] lg:h-[420px] flex items-center justify-center group select-none transition-all duration-300">
             
             {/* Outer Galaxy Glow */}
@@ -208,7 +208,7 @@ export const App: React.FC = () => {
             
               {/* Gambar Planet */}
               <img 
-                src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=1000&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                 alt="Earth Planet Background at Night" 
                 className="absolute inset-0 w-full h-full object-cover rounded-full aspect-square transition-transform duration-700 group-hover:scale-110 opacity-95"
               />
@@ -216,12 +216,12 @@ export const App: React.FC = () => {
               {/* Overlay Halus */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30 pointer-events-none rounded-full" />
 
-              {/* Logo SAN Academy Putih - Diperkecil secara proporsional */}
-              <div className="relative z-10 w-48 h-48 sm:w-56 sm:h-56 md:w-[260px] md:h-[260px] lg:w-[290px] lg:h-[290px] rounded-full aspect-square bg-white p-2 sm:p-3 md:p-4 shadow-[0_0_40px_rgba(255,255,255,0.95),0_0_60px_rgba(34,211,238,0.85)] flex items-center justify-center border-2 border-cyan-300/80 transition-transform duration-500 group-hover:scale-105 overflow-hidden">
+              {/* Logo SAN Academy Putih - Disesuaikan menjadi w-[85%] h-[85%] agar ada padding seimbang */}
+              <div className="relative z-10 w-[85%] h-[85%] rounded-full aspect-square bg-white shadow-[0_0_40px_rgba(255,255,255,0.95),0_0_60px_rgba(34,211,238,0.85)] flex items-center justify-center border-2 border-cyan-300/80 transition-transform duration-500 group-hover:scale-105 overflow-hidden">
                 <img 
-                  src="https://raw.githubusercontent.com/FebrianyRenata02/san-academy-bootcamp/refs/heads/main/src/assets/SAN%20Academy%20Bootcamp.png" 
+                  src="https://raw.githubusercontent.com/FebrianyRenata02/san-academy-bootcamp/refs/heads/main/src/assets/Untitled%20(33).png" 
                   alt="SAN Academy Bootcamp Logo" 
-                  className="w-full h-full object-contain rounded-full aspect-square animate-float"
+                  className="w-full h-full object-cover rounded-full aspect-square animate-float"
                 />
               </div>
 
