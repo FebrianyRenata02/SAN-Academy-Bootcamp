@@ -435,8 +435,8 @@ export const App: React.FC = () => {
       <footer className="border-t border-purple-900/40 py-10 px-6 text-xs text-slate-500 relative z-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-6">
-            <span className="font-serif text-slate-300 font-bold text-base tracking-wider">spaceedu</span>
-            <p>© {new Date().getFullYear()} SpaceEdu Co., Ltd. All rights reserved.</p>
+            <span className="font-serif text-slate-300 font-bold text-base tracking-wider">Skill Ativation Network</span>
+            <p>© {new Date().getFullYear()} SAN Co., Ltd. All rights reserved.</p>
           </div>
 
           <div className="flex gap-6 text-slate-400">
