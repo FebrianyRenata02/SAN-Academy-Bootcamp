@@ -224,7 +224,7 @@ export const App: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30 pointer-events-none rounded-full" />
 
               {/* Logo SAN Academy Putih */}
-              <div className="relative z-10 w-[85%] h-[85%] rounded-full aspect-square bg-white shadow-[0_0_40px_rgba(255,255,255,0.95),0_0_60px_rgba(34,211,238,0.85)] flex items-center justify-center border-2 border-cyan-300/80 transition-transform duration-500 group-hover:scale-105 overflow-hidden">
+              <div className="relative z-10 w-[85%] h-[85%] rounded-full aspect-square bg-purple shadow-[0_0_40px_rgba(255,255,255,0.95),0_0_60px_rgba(34,211,238,0.85)] flex items-center justify-center border-2 border-purple-300/80 transition-transform duration-500 group-hover:scale-105 overflow-hidden">
                 <img 
                   src="https://raw.githubusercontent.com/FebrianyRenata02/san-academy-bootcamp/refs/heads/main/src/assets/Untitled%20(33).png" 
                   alt="SAN Academy Bootcamp Logo" 
