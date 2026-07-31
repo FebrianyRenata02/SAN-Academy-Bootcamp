@@ -36,8 +36,8 @@ const FASILITAS_DATA: Fasilitas[] = [
     image: 'https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&auto=format&fit=crop',
   },
   {
-    id: 'startup',
-    name: 'Startup',
+    id: 'company',
+    name: 'Company',
     subtitle: 'FACILITIES PROVIDED',
     description: "Fasilitas pembelajaran modern dengan perangkat berstandar industri, proyektor interaktif, dan materi kurikulum yang selalu diperbarui.",
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop',
