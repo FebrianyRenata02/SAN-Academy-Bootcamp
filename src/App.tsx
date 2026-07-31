@@ -67,9 +67,9 @@ const FASILITAS_DATA: Fasilitas[] = [
 
 const FEATURED_FASILITAS: FeaturedFasilitas[] = [
   { name: 'COMMUNITY', image: 'https://raw.githubusercontent.com/FebrianyRenata02/skill-activation-network/refs/heads/main/src/assets/Untitled%20(33).png' },
-  { name: 'LEARNING', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=150&auto=format&fit=crop' },
+  { name: 'LEARNING', image: 'https://raw.githubusercontent.com/FebrianyRenata02/skill-activation-network/refs/heads/main/src/assets/SAN_Academy.png' },
   { name: 'WORKING SPACE', image: 'https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=150&auto=format&fit=crop' },
-  { name: 'COMPANY', image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=150&auto=format&fit=crop' },
+  { name: 'COMPANY', image: 'https://raw.githubusercontent.com/FebrianyRenata02/skill-activation-network/refs/heads/main/src/assets/SAN.png' },
 ];
 
 const COURSES_DATA: Course[] = [
