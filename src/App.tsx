@@ -32,35 +32,35 @@ const FASILITAS_DATA: Fasilitas[] = [
     id: 'community',
     name: 'Community',
     subtitle: 'FACILITIES PROVIDED',
-    description: "Ruang kolaborasi terbuka dan komunitas aktif bagi para siswa untuk saling berdiskusi, berbagi wawasan, dan membangun relasi profesional di bidang teknologi.",
+    description: "Ruang kolaborasi terbuka dan komunitas aktif untuk saling berdiskusi, berbagi wawasan, dan membangun relasi profesional.",
     image: 'https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&auto=format&fit=crop',
   },
   {
     id: 'company',
     name: 'Company',
     subtitle: 'FACILITIES PROVIDED',
-    description: "Fasilitas pembelajaran modern dengan perangkat berstandar industri, proyektor interaktif, dan materi kurikulum yang selalu diperbarui.",
+    description: "Fasilitas pembelajaran modern berstandar industri, proyek interaktif, dan materi kurikulum yang selalu diperbarui.",
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop',
   },
   {
     id: 'working-space',
     name: 'Working Space',
     subtitle: 'FACILITIES PROVIDED',
-    description: "Co-working space yang nyaman, tenang, dan kondusif untuk mendukung produktivitas siswa dalam menyelesaikan proyek maupun tugas coding harian.",
+    description: "Co-working space yang nyaman, tenang, dan kondusif untuk mendukung produktivitas dalam menyelesaikan proyek maupun tugas & kerjaan harian.",
     image: 'https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=800&auto=format&fit=crop',
   },
   {
     id: 'learning facilities',
     name: 'LEARNING FACILITIES',
     subtitle: 'FACILITIES PROVIDED',
-    description: "Inkubator dan wadah bagi siswa untuk merintis startup teknologi, mendapatkan mentorship langsung, serta akses ke ekosistem industri digital.",
+    description: "Wadah bagi siswa untuk merintis startup, mendapatkan mentorship langsung, serta akses ke ekosistem industri digital.",
     image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=800&auto=format&fit=crop',
   },
   {
     id: 'library',
     name: 'LIBRARY',
     subtitle: 'FACILITIES PROVIDED',
-    description: "Inkubator dan wadah bagi siswa untuk merintis startup teknologi, mendapatkan mentorship langsung, serta akses ke ekosistem industri digital.",
+    description: "Library atau perpustakaan digital wadah bagi siswa untuk merintis dan belajar.",
     image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=800&auto=format&fit=crop',
   },
 ];
@@ -302,7 +302,7 @@ export const App: React.FC = () => {
           <div>
             <h3 className="text-2xl font-serif text-slate-100 mb-2">Skill Activation Network</h3>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xl">
-              Skill Activation Network menyediakan lingkungan belajar berstandar industri dengan fasilitas lengkap untuk mendukung kesuksesan karier digital Anda.
+            Skill Activation Network provides an industry-standard learning environment equipped with workspaces, Co-Working Spaces, Open Courses & Bootcamps, and a complete library to support your learning and career success.
             </p>
           </div>
         </div>
