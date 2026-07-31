@@ -293,7 +293,7 @@ export const App: React.FC = () => {
             <div className="absolute inset-0 rounded-full bg-purple-600/30 blur-xl animate-pulse" />
             <div className="relative w-48 h-48 rounded-full bg-white border border-purple-500/40 shadow-[0_0_30px_rgba(168,85,247,0.3)] flex items-center justify-center overflow-hidden p-2">
               <img 
-                src="https://raw.githubusercontent.com/FebrianyRenata02/skill-activation-network/refs/heads/main/src/assets/Agency%20Logo.png" 
+                src="https://raw.githubusercontent.com/FebrianyRenata02/skill-activation-network/refs/heads/main/src/assets/Untitled%20(33).png" 
                 alt="Skill Activation Network Logo" 
                 className="w-full h-full object-cover rounded-full"
               />
