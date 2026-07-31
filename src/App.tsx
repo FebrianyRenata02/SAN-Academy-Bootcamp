@@ -69,7 +69,7 @@ const FEATURED_FASILITAS: FeaturedFasilitas[] = [
   { name: 'COMMUNITY', image: 'https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=150&auto=format&fit=crop' },
   { name: 'LEARNING', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=150&auto=format&fit=crop' },
   { name: 'WORKING SPACE', image: 'https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=150&auto=format&fit=crop' },
-  { name: 'STARTUP', image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=150&auto=format&fit=crop' },
+  { name: 'COMPANY', image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=150&auto=format&fit=crop' },
 ];
 
 const COURSES_DATA: Course[] = [
