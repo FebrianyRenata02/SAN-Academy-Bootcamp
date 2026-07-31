@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-interface Planet {
+interface Fasilitas {
   id: string;
   name: string;
   subtitle: string;
@@ -8,7 +8,7 @@ interface Planet {
   image: string;
 }
 
-interface FeaturedPlanet {
+interface FeaturedFasilitas {
   name: string;
   image: string;
 }
@@ -27,42 +27,49 @@ interface Mission {
   patchUrl: string;
 }
 
-const PLANETS_DATA: Planet[] = [
+const FASILITAS_DATA: Fasilitas[] = [
   {
-    id: 'earth',
-    name: 'EARTH',
-    subtitle: 'PLANET',
-    description: "Learn more about this fascinating miracle that we call our home, Planet Earth. Course enrollment starts today. Early Bird tickets typically last a week, don't miss out!",
+    id: 'community',
+    name: 'Community',
+    subtitle: 'FACILITIES PROVIDED',
+    description: "Ruang kolaborasi terbuka dan komunitas aktif bagi para siswa untuk saling berdiskusi, berbagi wawasan, dan membangun relasi profesional di bidang teknologi.",
     image: 'https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&auto=format&fit=crop',
   },
   {
-    id: 'mars',
-    name: 'MARS',
-    subtitle: 'PLANET',
-    description: "Mars is the fourth planet from the Sun. Earth's axis of rotation is tilted, producing seasons. Explore our future second home and its terraforming potential.",
-    image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=800&auto=format&fit=crop',
+    id: 'startup',
+    name: 'Startup',
+    subtitle: 'FACILITIES PROVIDED',
+    description: "Fasilitas pembelajaran modern dengan perangkat berstandar industri, proyektor interaktif, dan materi kurikulum yang selalu diperbarui.",
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop',
   },
   {
-    id: 'jupiter',
-    name: 'JUPITER',
-    subtitle: 'GAS GIANT',
-    description: "Jupiter is the largest planet in our solar system. Known for its iconic Great Red Spot and dozens of moons, it is a masterclass in astrophysics.",
+    id: 'working-space',
+    name: 'Working Space',
+    subtitle: 'FACILITIES PROVIDED',
+    description: "Co-working space yang nyaman, tenang, dan kondusif untuk mendukung produktivitas siswa dalam menyelesaikan proyek maupun tugas coding harian.",
     image: 'https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=800&auto=format&fit=crop',
   },
   {
-    id: 'saturn',
-    name: 'SATURN',
-    subtitle: 'RINGED GIANT',
-    description: "Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. Dive deep into its gas composition and icy satellite moons.",
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop',
-  }
+    id: 'learning facilities',
+    name: 'LEARNING FACILITIES',
+    subtitle: 'FACILITIES PROVIDED',
+    description: "Inkubator dan wadah bagi siswa untuk merintis startup teknologi, mendapatkan mentorship langsung, serta akses ke ekosistem industri digital.",
+    image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=800&auto=format&fit=crop',
+  },
+  {
+    id: 'library',
+    name: 'LIBRARY',
+    subtitle: 'FACILITIES PROVIDED',
+    description: "Inkubator dan wadah bagi siswa untuk merintis startup teknologi, mendapatkan mentorship langsung, serta akses ke ekosistem industri digital.",
+    image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=800&auto=format&fit=crop',
+  },
 ];
 
-const FEATURED_PLANETS: FeaturedPlanet[] = [
-  { name: 'MERCURY', image: 'https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=150&auto=format&fit=crop' },
-  { name: 'VENUS', image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=150&auto=format&fit=crop' },
-  { name: 'JUPITER', image: 'https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=150&auto=format&fit=crop' },
-  { name: 'SATURN', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=150&auto=format&fit=crop' },
+const FEATURED_FASILITAS: FeaturedFasilitas[] = [
+  { name: 'COMMUNITY', image: 'https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=150&auto=format&fit=crop' },
+  { name: 'LEARNING', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=150&auto=format&fit=crop' },
+  { name: 'WORKING SPACE', image: 'https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=150&auto=format&fit=crop' },
+  { name: 'STARTUP', image: 'https://images.unsplash.com/photo-1614728423169-3f65fd722b7e?w=150&auto=format&fit=crop' },
 ];
 
 const COURSES_DATA: Course[] = [
@@ -81,21 +88,21 @@ const MISSIONS_DATA: Mission[] = [
 ];
 
 export const App: React.FC = () => {
-  const [activePlanetIndex, setActivePlanetIndex] = useState<number>(0);
+  const [activeFasilitasIndex, setActiveFasilitasIndex] = useState<number>(0);
   const [emailInput, setEmailInput] = useState<string>('');
   const [subscribed, setSubscribed] = useState<boolean>(false);
 
-  const currentPlanet = PLANETS_DATA[activePlanetIndex];
+  const currentFasilitas = FASILITAS_DATA[activeFasilitasIndex];
   
-  const prevPlanetName = PLANETS_DATA[(activePlanetIndex - 1 + PLANETS_DATA.length) % PLANETS_DATA.length].name;
-  const nextPlanetName = PLANETS_DATA[(activePlanetIndex + 1) % PLANETS_DATA.length].name;
+  const prevFasilitasName = FASILITAS_DATA[(activeFasilitasIndex - 1 + FASILITAS_DATA.length) % FASILITAS_DATA.length].name;
+  const nextFasilitasName = FASILITAS_DATA[(activeFasilitasIndex + 1) % FASILITAS_DATA.length].name;
 
-  const handleNextPlanet = () => {
-    setActivePlanetIndex((prev) => (prev + 1) % PLANETS_DATA.length);
+  const handleNextFasilitas = () => {
+    setActiveFasilitasIndex((prev) => (prev + 1) % FASILITAS_DATA.length);
   };
 
-  const handlePrevPlanet = () => {
-    setActivePlanetIndex((prev) => (prev - 1 + PLANETS_DATA.length) % PLANETS_DATA.length);
+  const handlePrevFasilitas = () => {
+    setActiveFasilitasIndex((prev) => (prev - 1 + FASILITAS_DATA.length) % FASILITAS_DATA.length);
   };
 
   const handleSubscribe = (e: React.FormEvent<HTMLFormElement>) => {
@@ -148,7 +155,7 @@ export const App: React.FC = () => {
           </div>
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-            <a href="#planets" className="hover:text-cyan-400 transition-colors">Planets</a>
+            <a href="#planets" className="hover:text-cyan-400 transition-colors">Fasilitas</a>
             <a href="#trailer" className="hover:text-cyan-400 transition-colors">Trailer</a>
             <a href="#tickets" className="hover:text-cyan-400 transition-colors">Tickets</a>
             <a href="#blog" className="hover:text-cyan-400 transition-colors">Blog</a>
@@ -166,13 +173,13 @@ export const App: React.FC = () => {
 
         <div className="text-center max-w-3xl mx-auto z-10 mt-4">
           <p className="text-cyan-400 tracking-[0.3em] text-xs font-semibold mb-2 uppercase">
-            {currentPlanet.subtitle}
+            {currentFasilitas.subtitle}
           </p>
           <h1 className="text-6xl md:text-8xl font-serif tracking-wider font-normal mb-4 text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-100 to-slate-400">
-            {currentPlanet.name}
+            {currentFasilitas.name}
           </h1>
           <p className="text-slate-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto min-h-[60px]">
-            {currentPlanet.description}
+            {currentFasilitas.description}
           </p>
 
           <div className="mt-6 flex items-center justify-center gap-4">
@@ -185,10 +192,10 @@ export const App: React.FC = () => {
         {/* Central Banner */}
         <div className="relative w-full max-w-5xl my-6 flex items-center justify-between z-10 px-2">
           <button 
-            onClick={handlePrevPlanet} 
+            onClick={handlePrevFasilitas} 
             className="flex items-center gap-2 text-xs font-semibold tracking-widest text-slate-400 hover:text-cyan-400 transition-colors uppercase p-4 group select-none"
           >
-            <span className="group-hover:-translate-x-1 transition-transform">‹</span> {prevPlanetName}
+            <span className="group-hover:-translate-x-1 transition-transform">‹</span> {prevFasilitasName}
           </button>
 
           {/* Central Galaxy Frame Container */}
@@ -206,10 +213,10 @@ export const App: React.FC = () => {
             {/* Layer 3: Inner Circle Container */}
             <div className="relative w-full h-full rounded-full aspect-square bg-[#080415] flex items-center justify-center shadow-[inset_0_0_40px_rgba(147,51,234,0.7),0_0_30px_rgba(34,211,238,0.5)] border border-cyan-400/50 overflow-hidden">
             
-              {/* Gambar Planet */}
+              {/* Gambar Background */}
               <img 
                 src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="Earth Planet Background at Night" 
+                alt="Fasilitas Background" 
                 className="absolute inset-0 w-full h-full object-cover rounded-full aspect-square transition-transform duration-700 group-hover:scale-110 opacity-95"
               />
 
@@ -233,10 +240,10 @@ export const App: React.FC = () => {
           </div>
 
           <button 
-            onClick={handleNextPlanet} 
+            onClick={handleNextFasilitas} 
             className="flex items-center gap-2 text-xs font-semibold tracking-widest text-slate-400 hover:text-cyan-400 transition-colors uppercase p-4 group select-none"
           >
-            {nextPlanetName} <span className="group-hover:translate-x-1 transition-transform">›</span>
+            {nextFasilitasName} <span className="group-hover:translate-x-1 transition-transform">›</span>
           </button>
         </div>
 
@@ -252,31 +259,31 @@ export const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Featured Planets */}
+      {/* Featured Fasilitas */}
       <section className="py-20 px-6 max-w-7xl mx-auto w-full border-t border-purple-900/30 relative z-10">
         <h2 className="text-center text-xs tracking-[0.3em] font-bold text-cyan-400 mb-12 uppercase">
-          FEATURED PLANETS
+          FEATURED FACILITIES
         </h2>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {FEATURED_PLANETS.map((planet, index) => (
+          {FEATURED_FASILITAS.map((item, index) => (
             <div 
               key={index} 
               className="bg-purple-950/20 border border-purple-800/30 rounded-2xl p-6 text-center hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group cursor-pointer backdrop-blur-sm"
               onClick={() => {
-                const foundIndex = PLANETS_DATA.findIndex(p => p.name.toLowerCase() === planet.name.toLowerCase());
-                if (foundIndex !== -1) setActivePlanetIndex(foundIndex);
+                const foundIndex = FASILITAS_DATA.findIndex(f => f.name.toLowerCase() === item.name.toLowerCase());
+                if (foundIndex !== -1) setActiveFasilitasIndex(foundIndex);
               }}
             >
               <div className="relative w-20 h-20 mx-auto mb-4">
                 <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-md group-hover:bg-cyan-400/40 transition-all" />
                 <img 
-                  src={planet.image} 
-                  alt={planet.name} 
+                  src={item.image} 
+                  alt={item.name} 
                   className="relative w-full h-full rounded-full object-cover group-hover:scale-105 transition-transform duration-300 border border-purple-500/30" 
                 />
               </div>
-              <h3 className="font-serif tracking-wider text-base mb-1 text-slate-200 group-hover:text-cyan-300 transition-colors">{planet.name}</h3>
+              <h3 className="font-serif tracking-wider text-base mb-1 text-slate-200 group-hover:text-cyan-300 transition-colors">{item.name}</h3>
             </div>
           ))}
         </div>
@@ -287,15 +294,15 @@ export const App: React.FC = () => {
             <div className="relative w-48 h-48 rounded-full bg-white border border-purple-500/40 shadow-[0_0_30px_rgba(168,85,247,0.3)] flex items-center justify-center overflow-hidden p-2">
               <img 
                 src="https://raw.githubusercontent.com/FebrianyRenata02/skill-activation-network/refs/heads/main/src/assets/Agency%20Logo.png" 
-                alt="SAN Academy Logo" 
+                alt="Skill Activation Network Logo" 
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
           </div>
           <div>
-            <h3 className="text-2xl font-serif text-slate-100 mb-2">SAN Academy Bootamp</h3>
+            <h3 className="text-2xl font-serif text-slate-100 mb-2">Skill Activation Network</h3>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xl">
-              Mars is the fourth planet from the Sun. Earth's axis of rotation is tilted with respect to its orbital plane, producing seasons on Earth. The gravitational interaction between Earth and the Moon causes tides, stabilizes Earth's orientation on its axis, and gradually slows its rotation.
+              Skill Activation Network menyediakan lingkungan belajar berstandar industri dengan fasilitas lengkap untuk mendukung kesuksesan karier digital Anda.
             </p>
           </div>
         </div>
