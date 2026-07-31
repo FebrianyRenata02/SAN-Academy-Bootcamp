@@ -291,7 +291,7 @@ export const App: React.FC = () => {
         <div className="mt-12 bg-purple-950/30 border border-purple-800/30 rounded-3xl p-8 flex flex-col md:flex-row items-center gap-8 backdrop-blur-md">
           <div className="relative shrink-0">
             <div className="absolute inset-0 rounded-full bg-purple-600/30 blur-xl animate-pulse" />
-            <div className="relative w-48 h-48 rounded-full bg-white border border-purple-500/40 shadow-[0_0_30px_rgba(168,85,247,0.3)] flex items-center justify-center overflow-hidden p-2">
+            <div className="relative w-48 h-48 rounded-full bg-purple border border-purple-500/40 shadow-[0_0_30px_rgba(168,85,247,0.3)] flex items-center justify-center overflow-hidden p-2">
               <img 
                 src="https://raw.githubusercontent.com/FebrianyRenata02/skill-activation-network/refs/heads/main/src/assets/Untitled%20(33).png" 
                 alt="Skill Activation Network Logo" 
