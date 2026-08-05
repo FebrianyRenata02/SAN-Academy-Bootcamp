@@ -156,7 +156,7 @@ export const App: React.FC = () => {
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
             <a href="#planets" className="hover:text-cyan-400 transition-colors">Fasilitas</a>
-            <a href="#trailer" className="hover:text-cyan-400 transition-colors">Trailer</a>
+            <a href="#trailer" className="hover:text-cyan-400 transition-colors">Course Catalog</a>
             <a href="#tickets" className="hover:text-cyan-400 transition-colors">Tickets</a>
             <a href="#blog" className="hover:text-cyan-400 transition-colors">Blog</a>
           </nav>
